@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+
+    margin: 0;
+}
+
+div.jumbotron h1 {
+
+    text-align: center;
+
+}
+
+#box1 {
+    background-color: lightgray;
+    width: 100%;
+    height: 400px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+.box__uno {
+    width: 500px;
+    height: 400px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 10px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+
+
+.box__dos {
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin: 10px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+
+
+
+.box__tres {
+    color: black;
+    width: 500px;
+    height: 400px;
+    border-radius: 5px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin: 10px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+
+#pie {
+    background-color: lightgray;
+    height: 200px;
+    text-align: center;   
+    padding-top: 50px;
+}
+
+ul{
+list-style: none;
+}
