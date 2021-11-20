@@ -1,22 +1,22 @@
-const Año = parseInt ("2021");
-let nombre = prompt ("Ingrese su Nombre");
-let apellido = prompt("Ingrese su Apellido");
+// const Año = parseInt ("2021");
+// let nombre = prompt ("Ingrese su Nombre");
+// let apellido = prompt("Ingrese su Apellido");
 
-if (nombre == "" || apellido == ""){
-    console.error( "Error! Datos no ingresados");
-    alert("Ingresar Datos Validos");
-} else {
-    let fechaNacimiento = parseInt( prompt("Ingrese su fecha de Nacimiento"));
-    let edad = parseInt( Año - fechaNacimiento );
-        if ( fechaNacimiento == "" || edad < 18 ){  
-            alert("No puede Ingresar!");
-        } else {
-            console.log("<div class=box2 >" + "<h2>" + "Hola "+ nombre + " " + apellido + "\nBienvenido al curos de JavaScript!" + "</h2>" + "</div>");
-            console.log(nombre);
-            console.log(apellido);
-            console.log(edad);
+// if (nombre == "" || apellido == ""){
+//     console.error( "Error! Datos no ingresados");
+//     alert("Ingresar Datos Validos");
+// } else {
+//     let fechaNacimiento = parseInt( prompt("Ingrese su fecha de Nacimiento"));
+//     let edad = parseInt( Año - fechaNacimiento );
+//         if ( fechaNacimiento == "" || edad < 18 ){  
+//             alert("No puede Ingresar!");
+//         } else {
+//             alert("Hola "+ nombre + " " + apellido + "\nBienvenido al curos de JavaScript!");
+//             console.log(nombre);
+//             console.log(apellido);
+//             console.log(edad);
 
-}
+// }
 
 class Producto {
     constructor(id,nombre, precio) {
@@ -47,13 +47,60 @@ console.log(productos);
 
 const buscarGt1050 = productos.find( nombre => nombre.id === 2);
 console.log(buscarGt1050);
+
+// DOM 
+
+let elemento;
+
+elemento = document;
+elemento = document.all;
+elemento = document.head;
+elemento = document.body;
+
+elemento = document.domain;
+elemento = document.URL;
+
+elemento = document.links;
+elemento = document.links[3];
+elemento = document.links[3].className;
+elemento = document.links[3].classList;
+
+
+console.log(elemento);
+console.log(typeof elemento);
+
+
+const div = document.getElementById("productos");
+console.log(div);
+
+const header = document.getElementsByClassName("header");
+console.log(header);
+
+const divBox = document.getElementsByClassName("box__uno");
+console.log(divBox);
+console.log(divBox[0].innerHTML);
+
+let h3 = document.querySelectorAll('div h3');
+console.log(h3);
+console.log(h3[3].innerHTML);
+console.log(h3[0].innerHTML);
+
+let li = document.querySelectorAll('li');
+console.log(li);
+
+for (const titulo of h3) {
+    console.log(titulo.innerHTML);
 }
 
-let pc = document.getElementById("pc");
-let comp = document.getElementById("comp");
-let acce = document.getElementById("acce")
+
+let parrafo = document.createElement("p");
+
+parrafo.innerHTML = "<h4>Mas buscadas</h4>";
+
+// document.body.appendChild(parrafo);
+// document.querySelector('main').appendChild(parrafo);
+document.getElementById('coder').appendChild(parrafo);
 
 
-console.log(pc.innerHTML);
-console.log(comp.innerHTML);
-console.log(acce.innerHTML);
+
+

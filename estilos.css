@@ -45,13 +45,13 @@ div nav {
   }
 
 .box img{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
   
 .box__uno {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
     border-radius: 5px;
@@ -65,8 +65,8 @@ div nav {
 
 
 .box__dos {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 5px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
@@ -83,9 +83,8 @@ div nav {
 
 
 .box__tres {
-    color: black;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 5px;
     border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
@@ -116,7 +115,7 @@ list-style: none;
 }
 
 .tamaño img {
-  height: 350px;
-  width: 500px;
+  height: 250px;
+  width: 400px;
 }
 
