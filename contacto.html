@@ -14,7 +14,7 @@
             <h1 class="mt-0 mb-0 rounded">Geme Zone</h1>
               
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">GZ</a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,7 +38,84 @@
     </header>
 
     <main>
-        <h1>Contactos</h1>
+
+        <div class="content mt-5">
+          <div class="container text-center mb-4">
+            <h3>Formulario de contacto</h3>
+          </div>
+    
+          <div class="container">
+            <div class="row align-items-stretch no-gutters contact-wrap">
+              <div class="col-md-12">
+                <div class="form h-100">
+
+                  <form class="mb-5" method="post" id="Formulario" name="contactForm">
+                    <div class="row">
+                      <div class="col-md-6 form-group mb-3">
+                        <label for="" class="col-form-label" >Nombre y Apellido</label>
+                        <input type="text" class="form-control" placeholder="Escriba aqui" id="nombre">
+                      </div>
+                      <div class="col-md-6 form-group mb-3">
+                        <label for="" class="col-form-label" >Email </label>
+                        <input type="text" class="form-control" placeholder="Ingrese su email" id="email">
+                      </div>
+                    </div>
+                    <div class="row">                      
+                      <label for="" class="col-form-label">Sexo</label>
+                      <div class="col-md-2">
+                        <input type="radio" name="Hombre">
+                        <label for="Hombre"> Hombre </label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="radio" name="Mujer">
+                        <label for="Mujer"> Mujer</label>
+                      </div>
+                      <div class="col-md-2 mb-3" >
+                        <input type="radio" name="Indefinido" >
+                        <label for="Indefinido">Indefinido</label>
+                      </div>                      
+                      
+                      <div class="col-md-6">
+                        <label for="" class="col-form-label">Edad</label>
+                        <input type="number" class="form-control" min="18" max="80" id="edad">
+                      </div>
+                    </div>
+
+      
+                    <div class="row">
+                      <div class="col-md-12 form-group mb-3">
+                        <label for="budget" class="col-form-label">Pais</label>
+                        <input list="paises" class="form-control" name="paises" id="pais">
+                        <datalist id="paises">
+                          <option value="Argentina">Argentina</option>
+                          <option value="USA">USA</option>
+                          <option value="Brasil">Brasil</option>
+                          <option value="Mexico">Mexico</option>
+                        </datalist>
+                        
+                      </div>
+                    </div>
+      
+                    <div class="row">
+                      <div class="col-md-12 form-group mb-3">
+                        <label for="message" class="col-form-label">Mensaje</label>
+                        <textarea class="form-control" cols="30" rows="4"  placeholder="Escriba su Mensaje"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <input type="submit" value="Enviar" class="btn btn-primary rounded-0 py-2 px-4">
+                        <span class="submit"></span>
+                      </div>
+                    </div>
+                  </form>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
      
     </main>
 

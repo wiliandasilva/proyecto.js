@@ -76,14 +76,14 @@ console.log(div);
 const header = document.getElementsByClassName("header");
 console.log(header);
 
-const divBox = document.getElementsByClassName("box__uno");
-console.log(divBox);
-console.log(divBox[0].innerHTML);
+// const divBox = document.getElementsByClassName("box__uno");
+// console.log(divBox);
+// console.log(divBox[0].innerHTML);
 
 let h3 = document.querySelectorAll('div h3');
-console.log(h3);
-console.log(h3[3].innerHTML);
-console.log(h3[0].innerHTML);
+// console.log(h3);
+// console.log(h3[3].innerHTML);
+// console.log(h3[0].innerHTML);
 
 let li = document.querySelectorAll('li');
 console.log(li);
@@ -99,8 +99,42 @@ parrafo.innerHTML = "<h4>Mas buscadas</h4>";
 
 // document.body.appendChild(parrafo);
 // document.querySelector('main').appendChild(parrafo);
-document.getElementById('coder').appendChild(parrafo);
+// document.getElementById('coder').appendChild(parrafo);
 
+//  -------------------EVENTOS--------------------
 
+let divPc = document.getElementById("pc");
 
+console.log(divPc);
 
+// divPc.onclick = () =>{console.log("click en pc armadas")};
+// divPc.onmousemove = () =>{console.log("mover sobre pc armadas");}
+ 
+
+let input1 = document.getElementById("nombre");
+console.log(input1);
+
+let input2 = document.getElementById("email");
+console.log(input2);
+
+let input3 = document.getElementById("edad");
+
+let input4 = document.getElementById("pais");
+
+input1.onkeyup = () => {console.log("nombre")};
+input2.onkeydown = () => {console.log("email")};
+
+input1.onchange = () => {console.log("cambio 1")};
+input2.onchange = () => {console.log("cambio 2")};
+input3.onchange = () => {console.log("cambio 3")};
+input4.onchange = () => {console.log("cambio 4")};
+
+let miFormulario = document.getElementById("Formulario");
+console.log(miFormulario);
+
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e){
+    e.preventDefault();
+    console.log("Formulario enviado");
+}
