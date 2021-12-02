@@ -21,15 +21,19 @@
                 
                 <div class="collapse navbar-collapse" >
                   <ul class="navbar-nav">
+
                     <li class="nav-item active barra">
                       <a class="nav-link" href="index.html" id="Home">Home</span></a>
                     </li>
+
                     <li class="nav-item barra">
                       <a class="nav-link" href="productos.html" id="Producto">Productos</a>
                     </li>
+
                     <li class="nav-item barra">
                       <a class="nav-link" href="contacto.html" id="Contacto">Contacto</a>
                     </li>
+
                   </ul>
                 </div>
             
@@ -38,8 +42,30 @@
     </header>
 
     <main>
-        <div class="container-fluid" id="box1">
-            <img src="img/carusel-4.jpg" alt="gamer for life">
+        <div class="main" id="carusel">
+          <div class="banner" id="banner">
+            
+            <a href="">
+                <div class="banner-slide slide1 slide-active"></div>
+            </a>
+            <a href="">
+                <div class="banner-slide slide2"></div>
+            </a>
+            <a href="">
+                <div class="banner-slide slide3"></div>
+            </a>
+            
+          </div>
+        
+          <a href="javascript:void(0)" class="button prev" id="prev"></a>
+          <a href="javascript:void(0)" class="button next" id="next"></a>
+
+          <div class="dots" id="dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+          </div>
+
         </div>
 
         <div class="container-sm|md|lg|xl text-center mt-4 contenedor1" >
@@ -101,9 +127,8 @@
         
     </footer>
 
-    <script src="main.js">
-        
-    </script>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </body>
 </html>
