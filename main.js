@@ -1,3 +1,1 @@
-function carrusel () {
-    
-}
+$('h1').append("<span>Zona Gamer</span>");
